@@ -402,9 +402,15 @@ footer {
 }
 .update_icons{
     display: flex;
+    align-items: center;
+}
+.update_icons p{
+    margin-left: 15px;
+    margin-right: 15px;
+    
 }
 .update_wrapper{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
 }
@@ -572,10 +578,9 @@ button {
 button:hover {
     background-color: #0062cc;
 }
-
-
-
-  .contact__wrapper{}
+.Categories h2{
+    display: flex;
+}
 
 
 
