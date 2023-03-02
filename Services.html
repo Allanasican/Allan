@@ -10,23 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="header__wrapper">
-
-            <div class="header__logo">
-                <img src="./images/logo.png" alt="">
-                <h1>Creative  <span id="spanLogo">Visual</span></h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a id="services" href="#">Services</a></li>
-                    <li><a href="Updates.html">Updates</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+    
+                <div class="header__logo">
+                    <img src="./images/logo.png" alt="">
+                    <h1>Creative  <span id="spanLogo">Visual</span></h1>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a id="Home" href="#">Home</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Services.html">Services</a></li>
+                        <li><a href="Updates.html">Updates</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <div class="toggle__menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
         </div>
     </div>
 </header>
@@ -110,7 +115,18 @@
 </section>
 
 
+ <!------Script for toggle menu-->
+ <script>
 
+    const nav = document.querySelector('.nav');
+    const toggle__menu = document.querySelector('.toggle__menu');
+
+    toggle__menu.addEventListener("click",()=>{
+     toggle__menu.classList.toggle('open'); 
+     nav.classList.toggle('open');
+    })
+
+  </script>
 
 
 

@@ -5,6 +5,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+   overflow-x:hidden;
 }
 /*pag kukunin color, call lang yung var()*/
 :root{
@@ -57,7 +58,8 @@ nav ul li a:hover{
 }
 /*----------------Header Elements Ends Here---------------*/
 .banner{
-    padding: 5rem 0;
+    padding-top: 2rem;
+    padding-bottom: 12rem;
 }
 
 /*.banner__wrapper{
@@ -66,6 +68,7 @@ nav ul li a:hover{
     grid-gap: 20px;
 }*/
 .banner__wrapper{
+    
     display: flex;
     align-items: center;
     gap: 4rem;
@@ -198,6 +201,26 @@ nav ul li a:hover{
     display: flex;
     margin-top: 20px;
 }
+.myButton {
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    background-color: var(--primary);
+    border-radius: 3rem;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;   
+    margin: 2rem 0;
+    align-items: center;
+}ybuttonybutton
+.myButton:hover {
+	background:var(--black);
+    color: var(--white);
+	
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 
 /*-------ABOUT STARTS HERE----*/
 .aboutme{
@@ -207,6 +230,9 @@ nav ul li a:hover{
     display: flex;
     align-items: center;
     gap:4rem;
+}
+.about__wrapper img{
+    display: block;
 }
 .about__img{
     display: flex;
@@ -319,7 +345,7 @@ footer {
 }
 
 
-.About__content h2{
+.About__contents h2{
     color: var(--primary);
     font-size: 60px;
     line-height: 60px;
@@ -366,6 +392,23 @@ footer {
 #about{
     color: var(--primary);
 }
+/*-------Updates-------*/
+.update_container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.update_icons{
+    display: flex;
+}
+.update_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /*-------------Services Section-------------------*/
 .Aboutme__wrapper{
     display: flex;
@@ -408,7 +451,7 @@ footer {
 #services{
     color: var(--primary);
 }
-.toggle__menu {
+.toggle__menu{
     cursor: pointer;
 }
 .toggle__menu span{
@@ -416,18 +459,108 @@ footer {
     height: 0.2rem;
     width: 2rem;
     margin-bottom: 0.4rem;
+    border-radius: 0.5rem;
 }
+/*-------------COntact-------------------*/
+.container {
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact__wrapper h1{
+    padding-top: 6rem;
+    color: var(--primary);
+}
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-right: 20px;
+}
+
+.icon i{
+    width: 40px;
+    color: var(--primary);
+}
+
+.text {
+    line-height: 3rem;
+    color: var(--white);
+}
+.social__icon{
+    margin-top: 20px;
+    color: var(--white);
+}
+.social__icon i{
+    margin-right: 10px;
+}
+
+.contact_section{
+    height: 100vh;
+    background-color: var(--black);
+}
+
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .contact__wrapper{
+
+  }
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (max-width:768px){
     .toggle__menu{
-            display:block;    
+            display:block;           
         }
         .toggle__menu span{
             display: block;
+            border: 0.5rem;
+            transition: 0.5s ease-in;
         }
         nav.open ul{
-            left: 0;
+            right: 0;
+            transition: 0.5s ease-in;
+            
         }
         nav ul{
             display: block;
@@ -435,30 +568,26 @@ footer {
             right: -100%;
             top: 6.7rem;
             background-color: var(--white);
-            width: 100%;    
-            height: 100%;
+            width: 100vh;    
+            height: 100vh;
             align-items: center;
             text-align: center;
+            transition: 0.5s ease-in;
         }
-    
-        .banner img{
-            width: 50%;
-        }
-    
         nav ul li a{
             display: block;
             width: 100%;
             padding: 1rem;
             color: var(--black);
-            
+            border-bottom: 1px  solid rgb(170, 170, 170);            
         }
         nav ul li:hover{
             background-color: var(--primary);
         }
         nav ul li :hover a{
-            color: var(--white) ;
+            color: var(--white);
         }
-    .container{
+       .container{
         width: 100%;
     }
     .banner__content h1{
@@ -499,6 +628,49 @@ footer {
         font-size: 12px;
       }
       /*-----------Services----------*/
+      .About__wrapper{
+        display:block;
+      }
+    .About__wrapper img{
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+
+    }
+    .about__contents h1{
+        font-size: 6rem;
+    }
+    .about__wrapper img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .about__contents h2{
+        text-align: center;
+    }
+
+    .about__wrapper{
+        display: block;
+
+    }   
+    .LatestTrends_wrapper{
+        display: block;
+    }
+    .LatestTrends h2{
+        text-align: center;
+    }
+    .LatestTrends p{
+        text-align: center;
+
+    }
+    .section__content {
+        margin-right: 75px;
+    }
+    .LatestTrend_Card{
+        margin-left: auto;
+        margin-right: auto;
+    }
       .services__content{
         padding: 1rem 1rem;
     }
@@ -527,6 +699,9 @@ footer {
         background-color: var(--white);
         color: var(--dark);
     }
+    .services__wrapper{
+        display: block;
+    }
     .about__img img{
         width: 20rem;
         margin-bottom: 50px;
@@ -543,6 +718,28 @@ footer {
         font-size: 1rem;
         text-align: justify;
     }
+    .toggle__menu.open span:nth-child(1){
+        transition: 0.5s ease;
+        transform:translate(-2px,18px) rotate(45deg);
+    }
+    .toggle__menu.open span:nth-child(2){
+        opacity: 0;
+        transition: 0s;
+    }
+    .toggle__menu.open span:nth-child(3){
+        transition: 0.5s ease;
+        transform:translate(-2px,0px) rotate(-45deg);
+    }
+    .Recentprojects h1{
+        font-size: 2rem;
+    }
+    .chevron {
+        margin-top: 100px;
+    }
+    .cardContent p{
+        text-align: justify;
+    }
+
 
 }
 
