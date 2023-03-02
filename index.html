@@ -18,34 +18,41 @@
                 <img src="./images/logo.png" alt="">
                 <h1>Creative  <span id="spanLogo">Visual</span></h1>
             </div>
-            <nav>
+            <nav class="nav">
                 <ul>
-                    <li><a id="Home" href="#">Index</a></li>
+                    <li><a id="Home" href="#">Home</a></li>
                     <li><a href="About.html">About</a></li>
                     <li><a href="Services.html">Services</a></li>
                     <li><a href="#">Updates</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
+                <div class="toggle__menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </nav>
-            <div class="toggle_menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
         </div>
+        
+        
     </div>
 </header>
 
 <section class="banner">
     <div class="container">
-        <div class="banner__wrapper">
-            <div class="banner__content">
-                <h1 style="font-size:80px">Creative</h1><br> <h1 style="font-size:80px">Visual</h1><br><h1 style="font-size:80px"> Design</h1>
+        <div class="About__wrapper">
+            <div class="about__contents">
+               <h1>CREATIVE VISUAL DESIGN</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur quasi modi quo odio eos quidem, tempora optio sed impedit sequi possimus, in doloremque. Ab eveniet, placeat ratione voluptas dignissimos eius facere, magni tempore nam incidunt sunt rem. In qui, facilis reiciendis quod doloribus quibusdam voluptate magni architecto tempore eligendi delectus.</p>
-                
-                <a href="#">Explore more</a>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero optio ut excepturi earum incidunt magnam iste eos sunt dolores nobis, nisi temporibus non fuga corrupti aspernatur nihil similique inventore asperiores.</p>
+                <div class="About__icons">
+                    <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-youtube fa-2xl"></i>
+                </div>
             </div>
-                <img src="./images/Hero.png" alt="">
+                <img src="./images/aboutme.png" alt="">
 
         </div>
     </div>
@@ -73,7 +80,7 @@
             </div>
             <div class="services__content">
                 <img src="./images/socia-media.png" alt="">
-                <h4>Social Media Specialist</h4>
+                <h4>Graphic and Vector Design</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum impedit accusamus dolores reprehenderit cumque quam, adipisci veritatis culpa, voluptates neque voluptate libero similique vero dolorum! Perferendis, excepturi! Sapiente, deserunt voluptates?</p>
 
                 <a href="#">GET A QUOTE</a>
@@ -182,6 +189,17 @@
         <div class="center-text">Baloc Road, brgy san ignacio San Pablo city,Laguna 4000</div>
         <div class="right-text">©CreativeVisualDesign 2022</div>
       </footer>
+      <script>
+
+        const nav = document.querySelector('.nav');
+        const toggle__menu = document.querySelector('.toggle__menu');
+
+        toggle__menu.addEventListener("click",()=>{
+         toggle__menu.classList.toggle('open'); 
+         nav.classList.toggle('open');
+        })
+
+      </script>
       
 
 </body>
