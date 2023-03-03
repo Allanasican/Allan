@@ -211,7 +211,7 @@ nav ul li a:hover{
     display: inline-block;   
     margin: 2rem 0;
     align-items: center;
-}ybuttonybutton
+}
 .myButton:hover {
 	background:var(--black);
     color: var(--white);
@@ -220,6 +220,19 @@ nav ul li a:hover{
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+.Button{
+    color: var(--white);
+    padding: 0.8rem 1rem;
+    background-color: var(--primary);
+    border-radius: 3rem;
+    text-decoration: none;
+    text-align: center;
+    margin: 2rem 0;
+    width: 9rem;
+    margin-left: 68%;
+    font-size: 15px;
+    align-items: center;
 }
 
 /*-------ABOUT STARTS HERE----*/
@@ -963,6 +976,9 @@ button:hover {
         text-align: center;
         text-align: justify;
     
+    }
+    .About__wrapper{
+        display: block;
     }
 
 
